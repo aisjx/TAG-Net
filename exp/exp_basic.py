@@ -1,6 +1,6 @@
 import os
 import torch
-from models import iTransformer, Medformer, MedGNN
+from models import iTransformer, Medformer, TAGNet
 
 
 class Exp_Basic(object):
@@ -9,7 +9,7 @@ class Exp_Basic(object):
         self.model_dict = {
             "iTransformer": iTransformer,
             "Medformer": Medformer,
-            'MedGNN': MedGNN
+            'TAGNet': TAGNet
         }
         self.device = self._acquire_device()
         self.model = self._build_model().to(self.device)

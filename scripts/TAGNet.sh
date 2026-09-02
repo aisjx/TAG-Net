@@ -5,7 +5,7 @@ python \
   --is_training 1 \
   --root_path ./dataset/APAVA/ \
   --model_id APAVA-Subject \
-  --model MedGNN \
+  --model TAGNet \
   --data APAVA \
   --e_layers 6 \
   --batch_size 32 \
@@ -28,7 +28,7 @@ python \
   --is_training 1 \
   --root_path ./dataset/ADFD/ \
   --model_id ADFD \
-  --model MedGNN \
+  --model TAGNet \
   --data ADFD \
   --e_layers 6 \
   --batch_size 64 \
@@ -52,7 +52,7 @@ python \
   --is_training 1 \
   --root_path ./dataset/PTB/ \
   --model_id PTB \
-  --model MedGNN \
+  --model TAGNet \
   --data PTB \
   --e_layers 6 \
   --batch_size 32 \
@@ -75,7 +75,7 @@ python \
   --is_training 1 \
   --root_path ./dataset/TDBRAIN/ \
   --model_id TDBRAIN \
-  --model MedGNN \
+  --model TAGNet \
   --data TDBRAIN \
   --e_layers 6 \
   --batch_size 32 \
@@ -98,7 +98,7 @@ python \
   --is_training 1 \
   --root_path ./dataset/PTB-XL/ \
   --model_id PTB-XL \
-  --model MedGNN \
+  --model TAGNet \
   --data PTB-XL \
   --e_layers 6 \
   --batch_size 32 \

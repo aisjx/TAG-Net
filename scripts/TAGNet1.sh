@@ -6,7 +6,7 @@ python \
   --is_training 1 \
   --root_path ./dataset/ADFD/ \
   --model_id ADFD-1 \
-  --model MedGNN \
+  --model TAGNet \
   --data ADFD \
   --e_layers 6 \
   --batch_size 64 \
@@ -30,7 +30,7 @@ python \
   --is_training 1 \
   --root_path ./dataset/ADFD/ \
   --model_id ADFD-2 \
-  --model MedGNN \
+  --model TAGNet \
   --data ADFD \
   --e_layers 6 \
   --batch_size 64 \

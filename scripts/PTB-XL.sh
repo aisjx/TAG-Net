@@ -7,7 +7,7 @@ python \
   --is_training 1 \
   --root_path  /home/ljh2025/ljh/DMKformer0/dataset/PTB-XL/ \
   --model_id PTB-XL \
-  --model MedGNN \
+  --model TAGNet \
   --data PTB-XL \
   --e_layers 4 \
   --batch_size 64 \

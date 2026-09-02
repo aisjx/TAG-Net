@@ -6,7 +6,7 @@ python \
   --is_training 1 \
   --root_path ./dataset/PTB/ \
   --model_id PTB \
-  --model MedGNN \
+  --model TAGNet \
   --data PTB \
   --e_layers 6 \
   --batch_size 64 \

@@ -8,7 +8,7 @@ python \
   --is_training 1 \
   --root_path /home/ljh2025/ljh/DMKformer0/dataset/ADFD/ \
   --model_id ADFD-SingleGNNHint \
-  --model MedGNN \
+  --model TAGNet \
   --data ADFD \
   --e_layers 6 \
   --batch_size 64 \

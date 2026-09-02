@@ -174,7 +174,7 @@ if __name__ == "__main__":
     parser.add_argument("--task_name", type=str, default="classification")
     parser.add_argument("--is_training", type=int, default=1, help="status")
     parser.add_argument("--model_id", type=str, default="APAVA-Subject", help="model id")
-    parser.add_argument("--model", type=str, default="MedGNN", help="[MedGNN, Medformer, iTransformer]")
+    parser.add_argument("--model", type=str, default="TAGNet", help="[TAGNet, Medformer, iTransformer]")
     parser.add_argument('--checkpoints', type=str, default='./checkpoints/', help='location of model checkpoints')
 
     parser.add_argument("--data", type=str, default="APAVA", help="dataset type")
@@ -197,7 +197,7 @@ if __name__ == "__main__":
     parser.add_argument("--augmentations", type=str, default="none,drop0.35",
                         help="a comma-seperated list of augmentation types (none, jitter or scale). Append numbers to specify the strength of the augmentation, e.g., jitter0.1")
 
-    # MedGNN
+    # TAGNet
     parser.add_argument('--resolution_list', type=str, default="2,4,6,8")
     parser.add_argument('--nodedim', type=int, default=10)
     parser.add_argument('--low_freq_ratio', type=float, default=0.5)
@@ -238,7 +238,7 @@ if __name__ == "__main__":
         help="Strength of residual structure deviation around the shared adjacency.",
     )
 
-    # Structure Loss (DAG + Sparsity) for MedGNN
+    # Structure Loss (DAG + Sparsity) for TAGNet
     parser.add_argument('--use_structure_loss', action='store_true', default=False,
                         help='Enable DAG + Sparsity structural loss on adjacency matrices')
     parser.add_argument('--lambda_dag', type=float, default=0.5,

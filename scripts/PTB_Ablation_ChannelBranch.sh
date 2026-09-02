@@ -8,7 +8,7 @@ python \
   --is_training 1 \
   --root_path /home/ljh2025/ljh/DMKformer0/dataset/PTB/ \
   --model_id PTB-AblChanBranch \
-  --model MedGNN \
+  --model TAGNet \
   --data PTB \
   --e_layers 6 \
   --batch_size 64 \

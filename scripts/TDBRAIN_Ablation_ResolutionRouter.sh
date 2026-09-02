@@ -8,7 +8,7 @@ python \
   --is_training 1 \
   --root_path /home/ljh2025/ljh/DMKformer0/dataset/TDBRAIN/ \
   --model_id TDBRAIN-AblResRouter \
-  --model MedGNN \
+  --model TAGNet \
   --data TDBRAIN \
   --e_layers 4 \
   --batch_size 64 \

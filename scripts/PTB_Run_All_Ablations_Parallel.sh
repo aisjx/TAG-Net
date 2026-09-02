@@ -23,7 +23,7 @@ run_part1() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/PTB/ \
-        --model_id PTB-AblTemp --model MedGNN --data PTB \
+        --model_id PTB-AblTemp --model TAGNet --data PTB \
         --e_layers 6 --batch_size 64 --d_model 128 --d_ff 256 --n_heads 8 \
         --resolution_list 2,4,8,16 --nodedim 8 --augmentations drop0.2 \
         --disable_temporal_branch --des 'Exp' --itr 3 \
@@ -34,7 +34,7 @@ run_part1() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/PTB/ \
-        --model_id PTB-AblFreq --model MedGNN --data PTB \
+        --model_id PTB-AblFreq --model TAGNet --data PTB \
         --e_layers 6 --batch_size 64 --d_model 128 --d_ff 256 --n_heads 8 \
         --resolution_list 2,4,8,16 --nodedim 8 --augmentations drop0.2 \
         --disable_frequency_branch --des 'Exp' --itr 3 \
@@ -53,7 +53,7 @@ run_part2() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/PTB/ \
-        --model_id PTB-AblChanBranch --model MedGNN --data PTB \
+        --model_id PTB-AblChanBranch --model TAGNet --data PTB \
         --e_layers 6 --batch_size 64 --d_model 128 --d_ff 256 --n_heads 8 \
         --resolution_list 2,4,8,16 --nodedim 8 --augmentations drop0.2 \
         --disable_channel_branch --des 'Exp' --itr 3 \
@@ -64,7 +64,7 @@ run_part2() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/PTB/ \
-        --model_id PTB-AblResRouter --model MedGNN --data PTB \
+        --model_id PTB-AblResRouter --model TAGNet --data PTB \
         --e_layers 6 --batch_size 64 --d_model 128 --d_ff 256 --n_heads 8 \
         --resolution_list 2,4,8,16 --nodedim 8 --augmentations drop0.2 \
         --disable_resolution_router --des 'Exp' --itr 3 \
@@ -75,7 +75,7 @@ run_part2() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/PTB/ \
-        --model_id PTB-AblChanRes --model MedGNN --data PTB \
+        --model_id PTB-AblChanRes --model TAGNet --data PTB \
         --e_layers 6 --batch_size 64 --d_model 128 --d_ff 256 --n_heads 8 \
         --resolution_list 2,4,8,16 --nodedim 8 --augmentations drop0.2 \
         --disable_channel_resolution_module --des 'Exp' --itr 3 \
@@ -94,7 +94,7 @@ run_part3() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/PTB/ \
-        --model_id PTB-AblDualGraph --model MedGNN --data PTB \
+        --model_id PTB-AblDualGraph --model TAGNet --data PTB \
         --e_layers 6 --batch_size 64 --d_model 128 --d_ff 256 --n_heads 8 \
         --resolution_list 2,4,8,16 --nodedim 8 --augmentations drop0.2 \
         --disable_cross_graph_interaction --des 'Exp' --itr 3 \
@@ -105,7 +105,7 @@ run_part3() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/PTB/ \
-        --model_id PTB-SingleGNNAdd --model MedGNN --data PTB \
+        --model_id PTB-SingleGNNAdd --model TAGNet --data PTB \
         --e_layers 6 --batch_size 64 --d_model 128 --d_ff 256 --n_heads 8 \
         --resolution_list 2,4,8,16 --nodedim 8 --augmentations drop0.2 \
         --single_gnn --single_gnn_fusion add --des 'Exp' --itr 3 \
@@ -116,7 +116,7 @@ run_part3() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/PTB/ \
-        --model_id PTB-SingleGNNConcat --model MedGNN --data PTB \
+        --model_id PTB-SingleGNNConcat --model TAGNet --data PTB \
         --e_layers 6 --batch_size 64 --d_model 128 --d_ff 256 --n_heads 8 \
         --resolution_list 2,4,8,16 --nodedim 8 --augmentations drop0.2 \
         --single_gnn --single_gnn_fusion concat --des 'Exp' --itr 3 \
@@ -127,7 +127,7 @@ run_part3() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/PTB/ \
-        --model_id PTB-SingleGNNGated --model MedGNN --data PTB \
+        --model_id PTB-SingleGNNGated --model TAGNet --data PTB \
         --e_layers 6 --batch_size 64 --d_model 128 --d_ff 256 --n_heads 8 \
         --resolution_list 2,4,8,16 --nodedim 8 --augmentations drop0.2 \
         --single_gnn --single_gnn_fusion gated --des 'Exp' --itr 3 \
@@ -138,7 +138,7 @@ run_part3() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/PTB/ \
-        --model_id PTB-SingleGNNHint --model MedGNN --data PTB \
+        --model_id PTB-SingleGNNHint --model TAGNet --data PTB \
         --e_layers 6 --batch_size 64 --d_model 128 --d_ff 256 --n_heads 8 \
         --resolution_list 2,4,8,16 --nodedim 8 --augmentations drop0.2 \
         --single_gnn --single_gnn_fusion hint --des 'Exp' --itr 3 \

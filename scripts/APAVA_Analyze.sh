@@ -19,7 +19,7 @@ python \
   --full_checkpoint ${FULL_CKPT} \
   --ablation_checkpoint ${ABL_CKPT} \
   --split ${SPLIT} \
-  --model MedGNN \
+  --model TAGNet \
   --e_layers 4 \
   --batch_size 64 \
   --d_model 256 \

@@ -6,7 +6,7 @@ python \
   --is_training 1 \
   --root_path ../dataset/APAVA/ \
   --model_id APAVA-Subject \
-  --model MedGNN \
+  --model TAGNet \
   --data APAVA \
   --e_layers 4 \
   --batch_size 64 \

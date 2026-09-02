@@ -23,7 +23,7 @@ run_part1() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/ADFD/ \
-        --model_id ADFD-AblTemp --model MedGNN --data ADFD \
+        --model_id ADFD-AblTemp --model TAGNet --data ADFD \
         --e_layers 6 --batch_size 64 --d_model 256 --d_ff 512 --n_heads 8 \
         --resolution_list 4,8,16 --nodedim 8 --augmentations none \
         --disable_temporal_branch --des 'Exp' --itr 3 \
@@ -34,7 +34,7 @@ run_part1() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/ADFD/ \
-        --model_id ADFD-AblFreq --model MedGNN --data ADFD \
+        --model_id ADFD-AblFreq --model TAGNet --data ADFD \
         --e_layers 6 --batch_size 64 --d_model 256 --d_ff 512 --n_heads 8 \
         --resolution_list 4,8,16 --nodedim 8 --augmentations none \
         --disable_frequency_branch --des 'Exp' --itr 3 \
@@ -53,7 +53,7 @@ run_part2() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/ADFD/ \
-        --model_id ADFD-AblChanBranch --model MedGNN --data ADFD \
+        --model_id ADFD-AblChanBranch --model TAGNet --data ADFD \
         --e_layers 6 --batch_size 64 --d_model 256 --d_ff 512 --n_heads 8 \
         --resolution_list 4,8,16 --nodedim 8 --augmentations none \
         --disable_channel_branch --des 'Exp' --itr 3 \
@@ -64,7 +64,7 @@ run_part2() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/ADFD/ \
-        --model_id ADFD-AblResRouter --model MedGNN --data ADFD \
+        --model_id ADFD-AblResRouter --model TAGNet --data ADFD \
         --e_layers 6 --batch_size 64 --d_model 256 --d_ff 512 --n_heads 8 \
         --resolution_list 4,8,16 --nodedim 8 --augmentations none \
         --disable_resolution_router --des 'Exp' --itr 3 \
@@ -75,7 +75,7 @@ run_part2() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/ADFD/ \
-        --model_id ADFD-AblChanRes --model MedGNN --data ADFD \
+        --model_id ADFD-AblChanRes --model TAGNet --data ADFD \
         --e_layers 6 --batch_size 64 --d_model 256 --d_ff 512 --n_heads 8 \
         --resolution_list 4,8,16 --nodedim 8 --augmentations none \
         --disable_channel_resolution_module --des 'Exp' --itr 3 \
@@ -94,7 +94,7 @@ run_part3() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/ADFD/ \
-        --model_id ADFD-AblDualGraph --model MedGNN --data ADFD \
+        --model_id ADFD-AblDualGraph --model TAGNet --data ADFD \
         --e_layers 6 --batch_size 64 --d_model 256 --d_ff 512 --n_heads 8 \
         --resolution_list 4,8,16 --nodedim 8 --augmentations none \
         --disable_cross_graph_interaction --des 'Exp' --itr 3 \
@@ -105,7 +105,7 @@ run_part3() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/ADFD/ \
-        --model_id ADFD-SingleGNNAdd --model MedGNN --data ADFD \
+        --model_id ADFD-SingleGNNAdd --model TAGNet --data ADFD \
         --e_layers 6 --batch_size 64 --d_model 256 --d_ff 512 --n_heads 8 \
         --resolution_list 4,8,16 --nodedim 8 --augmentations none \
         --single_gnn --single_gnn_fusion add --des 'Exp' --itr 3 \
@@ -116,7 +116,7 @@ run_part3() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/ADFD/ \
-        --model_id ADFD-SingleGNNConcat --model MedGNN --data ADFD \
+        --model_id ADFD-SingleGNNConcat --model TAGNet --data ADFD \
         --e_layers 6 --batch_size 64 --d_model 256 --d_ff 512 --n_heads 8 \
         --resolution_list 4,8,16 --nodedim 8 --augmentations none \
         --single_gnn --single_gnn_fusion concat --des 'Exp' --itr 3 \
@@ -127,7 +127,7 @@ run_part3() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/ADFD/ \
-        --model_id ADFD-SingleGNNGated --model MedGNN --data ADFD \
+        --model_id ADFD-SingleGNNGated --model TAGNet --data ADFD \
         --e_layers 6 --batch_size 64 --d_model 256 --d_ff 512 --n_heads 8 \
         --resolution_list 4,8,16 --nodedim 8 --augmentations none \
         --single_gnn --single_gnn_fusion gated --des 'Exp' --itr 3 \
@@ -138,7 +138,7 @@ run_part3() {
     python -u run.py \
         --task_name classification --is_training 1 \
         --root_path /home/ljh2025/ljh/DMKformer0/dataset/ADFD/ \
-        --model_id ADFD-SingleGNNHint --model MedGNN --data ADFD \
+        --model_id ADFD-SingleGNNHint --model TAGNet --data ADFD \
         --e_layers 6 --batch_size 64 --d_model 256 --d_ff 512 --n_heads 8 \
         --resolution_list 4,8,16 --nodedim 8 --augmentations none \
         --single_gnn --single_gnn_fusion hint --des 'Exp' --itr 3 \

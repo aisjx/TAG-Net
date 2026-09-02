@@ -6,7 +6,7 @@ python \
   --is_training 1 \
   --root_path ./dataset/ADFD/ \
   --model_id ADFD-Sample \
-  --model MedGNN \
+  --model TAGNet \
   --data ADFD-Sample \
   --e_layers 6 \
   --batch_size 128 \

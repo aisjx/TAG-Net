@@ -10,7 +10,7 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3
 
 ROOT_PATH=/home/ljh2025/ljh/DMKformer0/dataset/APAVA
 TASK_NAME=classification
-MODEL=MedGNN
+MODEL=TAGNet
 DATA=APAVA
 
 MODEL_ID_FULL=APAVA-Subject
