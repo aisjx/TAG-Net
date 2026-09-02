@@ -1,0 +1,22 @@
+# ADFD Dataset
+python \
+  -u run.py \
+  --task_name classification \
+  --is_training 1 \
+  --root_path ./dataset/ADFD/ \
+  --model_id ADFD \
+  --model TAGNet \
+  --data ADFD \
+  --e_layers 6 \
+  --batch_size 64 \
+  --d_model 128 \
+  --d_ff 256 \
+  --n_heads 8 \
+  --resolution_list 4,6,8 \
+  --nodedim 8 \
+  --augmentations none \
+  --des 'Exp' \
+  --itr 1 \
+  --learning_rate 0.0002 \
+  --train_epochs 15 \
+  --patience 8
